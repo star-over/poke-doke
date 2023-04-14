@@ -12,6 +12,7 @@ export const theme = {
       poppins: ['var(--font-poppins)', ...fontFamily.sans],
     },
     colors:{
+      
       primary:        "#DC0A2D",
       bug:            "#A7B723",
       dark:           "#75574C",
