@@ -40,7 +40,7 @@ module.exports = {
     "react-hooks",
     "jsx-a11y",
     "xss"
-],
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     // extraFileExtensions: [".json", ".md"],
@@ -50,18 +50,27 @@ module.exports = {
     project: "./tsconfig.eslint.json",
   },
   settings: {
-    "html/html-extensions": [".html", ".we"],
-    "html/xml-extensions": [".html"],
-    "html/indent": "0",
-    "html/report-bad-indent": "warn",
-    "html/javascript-tag-names": ["script", "customscript"],
-    "html/javascript-mime-types": ["text/javascript", "text/jsx"]
+    "import/resolver": {
+      typescript: { "alwaysTryTypes": true }
+    }
   },
   rules: {
-    // "quotes": [ "warn", "double" ],
-    "@typescript-eslint/quotes": [ "warn", "double" ],
+    "@typescript-eslint/quotes": ["warn", "double"],
+    "@typescript-eslint/semi": ["warn", "always", { "omitLastInOneLineBlock": true }],
     "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
+    "object-curly-newline": ["warn", {
+      "ObjectExpression": { "multiline": true, "minProperties": 4 },
+      "ObjectPattern": { "multiline": true, "minProperties": 4 },
+      "ImportDeclaration": { "multiline": true, "minProperties": 6 },
+      "ExportDeclaration": { "multiline": true, "minProperties": 6 }
+    }],
+    "react/jsx-tag-spacing": ["warn", {
+      "closingSlash": "never",
+      "beforeSelfClosing": "always",
+      "afterOpening": "never",
+      "beforeClosing": "never"
+    }],
   }
 };
