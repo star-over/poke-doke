@@ -73,11 +73,16 @@ module.exports = {
     }
   },
   rules: {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off",
+    
+    "react/jsx-indent": "warn",
+    "unicorn/no-empty-file": "warn",
+    "@typescript-eslint/indent": "warn",
     "@typescript-eslint/quotes": ["warn", "double"],
     "@typescript-eslint/semi": ["warn", "always", { "omitLastInOneLineBlock": true }],
     "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off",
     "object-curly-newline": ["warn", {
       "ObjectExpression": { "multiline": true, "minProperties": 4 },
       "ObjectPattern": { "multiline": true, "minProperties": 4 },
