@@ -12,8 +12,8 @@ const poppins = Poppins({
 
 export function FontProvider({ children }: Properties): JSX.Element {
   return (
-    <main className={`${poppins.variable} font-sans`}>
+    <div className={`${poppins.variable}`}>
       {children}
-    </main>
+    </div>
   );
 }
