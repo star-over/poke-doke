@@ -1,3 +1,5 @@
+const { warn } = require("console");
+
 module.exports = {
   root: true,
   env: {
@@ -100,6 +102,8 @@ module.exports = {
     "no-multi-spaces":"off",
     "@typescript-eslint/space-infix-ops": "off",
 
+    "react/destructuring-assignment": "warn",
+    "@typescript-eslint/comma-spacing": "warn",
     "@typescript-eslint/keyword-spacing": "warn",
     "@typescript-eslint/comma-dangle": "warn",
     "function-paren-newline": "warn",
