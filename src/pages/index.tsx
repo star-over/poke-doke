@@ -6,7 +6,7 @@ export default function Home() {
       <Head>
         <title>Poké Doké</title>
       </Head>
-      <h2 className="text-fighting mb-3 text-2xl font-semibold">
+      <h2 className="text-headline">
         Poké Doké&nbsp;
       </h2>
     </>

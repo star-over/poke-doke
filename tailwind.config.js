@@ -7,9 +7,9 @@ export const content = [
   "./src/**/*.{js,ts,jsx,tsx}",
 ];
 export const theme = {
-  fontFamily: {
-    sans: ["var(--font-poppins)", ...fontFamily.sans],
-  },
+  // fontFamily: {
+  //   sans: ["var(--font-poppins)", ...fontFamily.sans],
+  // },
   fontSize: {
     "headline": ["24px", { lineHeight: "32px", fontWeight: "700" }],
     "subtitle-1": ["14px", { lineHeight: "16px", fontWeight: "700" }],
