@@ -102,6 +102,13 @@ module.exports = {
     "no-multi-spaces":"off",
     "@typescript-eslint/space-infix-ops": "off",
 
+
+    "no-else-return": "warn",
+    "unicorn/no-negated-condition": "warn",
+    "unicorn/prefer-ternary": "warn",
+    "@typescript-eslint/space-before-blocks": "warn",
+    "prefer-template": "warn",
+    "@typescript-eslint/restrict-plus-operands": "warn",
     "react/destructuring-assignment": "warn",
     "@typescript-eslint/comma-spacing": "warn",
     "@typescript-eslint/keyword-spacing": "warn",

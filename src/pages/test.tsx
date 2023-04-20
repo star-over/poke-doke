@@ -14,10 +14,6 @@ export default function Test() {
     <div>
       <p className="text-headline">my test</p>
       <TypeChipsList types={types} />
-      <AttributeWeight weight={weight} />
-      <AttributeHeight height={height} />
-      <AttributeAbilities abilities={abilities} />
-
 
       <AttributeList>
         <AttributeWeight weight={weight} />
